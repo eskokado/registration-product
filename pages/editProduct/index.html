@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="/styles/globalStyles.css">
+  <title>Products - Edit</title>
+</head>
+<body>
+  <header>    
+    <div class="container">
+      <h1>Editar produto</h1>
+    </div>
+  </header>
+  <main>    
+    <div class="container">
+      <div id="error">Ocorreu um erro</div>
+      <div id="message">Alterado com sucesso</div>
+      <div class="btnOld">
+        <button>Voltar</button>
+      </div>
+      <div class="form">
+        <form>
+          <div class="div-form">
+            <div class="groupForm">
+              <label for="name">Nome:</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="groupForm">
+              <label for="description">Descrição:</label>
+              <input type="text" name="description" id="description">
+            </div>
+            <div class="groupForm">
+              <label for="price">Preço:</label>
+              <input type="text" name="price" id="price">
+            </div>
+            <div class="groupForm">
+              <label for="stock">Estoque:</label>
+              <input type="text" name="stock" id="stock">
+            </div>
+          </div>
+          <button class="btnSubmit">Salvar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
