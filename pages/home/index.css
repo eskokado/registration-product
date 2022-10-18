@@ -1,0 +1,93 @@
+header {
+  padding: 15px;
+  background-color: black;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+}
+
+main {
+
+}
+
+.btnAddProduct {
+  display: flex;
+  justify-content: flex-end;
+}
+.btnAddProduct button {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+.show-case {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card {
+  background-color: blueviolet;
+  width: 30%;
+  border-radius: 8px;
+  border: 2px solid white;  
+}
+
+.card .description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card .description > h3 {
+  text-align: center;
+}
+
+.card .description .estoque {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnsCrud {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.btnsCrud button {
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+#error {
+  margin-top: 10px;
+  display: none;
+  padding: 20px;
+  background-color: firebrick;
+  text-align: center;
+  font-size: 25px;
+}
+#error.enabled-error {
+  display: block;    
+}
+#message {
+  margin-top: 10px;
+  display: none;
+  padding: 20px;
+  background-color: aquamarine;
+  text-align: center;
+  font-size: 25px;
+}
+#message.enabled-msg {
+  display: block;    
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 60%;
+  } 
+}
